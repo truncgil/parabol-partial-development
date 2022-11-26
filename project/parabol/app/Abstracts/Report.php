@@ -334,7 +334,6 @@ abstract class Report
             if (!isset($item->$group_field)) {
                 continue;
             }
-//test
             $group = $item->$group_field;
 
             if (
