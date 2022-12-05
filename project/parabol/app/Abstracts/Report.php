@@ -325,8 +325,13 @@ abstract class Report
     {
         $group_field = $this->getSetting('group') . '_id';
   //      dd($items);
+    
         foreach ($items as $item) {
             // Make groups extensible
+            if($item->id=="6588") {
+               // dump($date_field);
+               // dd($item);
+            } 
             $item = $this->applyGroups($item);
 
             $date = $this->getFormattedDate(Date::parse($item->$date_field));
@@ -344,15 +349,19 @@ abstract class Report
                 continue;
             }
             
-            if($item->category_id==2) {
-            //    dd($group_field);
-            }
+            
             
             
             $amount = $item->getAmountConvertedToDefault(false, $with_tax);
+
+            if($item->category_id==2) {
+                //    dd($group_field);
+              //  print2($amount);
+                }
             
             $type = ($item->type === Document::INVOICE_TYPE || $item->type === 'income') ? 'income' : 'expense';
             
+            /*
             $inclusive = ['bill','invoice'];
             $inclusiveStatus = ['paid','partial'];
             
@@ -365,9 +374,10 @@ abstract class Report
             } else {
                 $add = true;
             }
+            */
             
 
-            if(!in_array($item->type,$inclusive)) {
+          //  if(!in_array($item->type,$inclusive)) {
 
                 if (($check_type == false) || ($type == 'income')) {
                     $this->row_values[$table][$group][$date] += $amount;
@@ -378,7 +388,7 @@ abstract class Report
     
                     $this->footer_totals[$table][$date] -= $amount;
                 }
-            }
+        //    }
             
         }
     //    dd($this->row_values);
