@@ -27,27 +27,50 @@ $user = $dizi;
                     <th>Tarih</th>
                     <th>Ödeme Tutarı</th>
                     <th>Bilgi</th>
-                    <th>Durum</th>
                 </tr>
-                <?php $odemeler = db("odemeler")
-                ->where("durum","<>","Ödeme Bekliyor")
-                ->orderBy("id","DESC")
-                ->get(); ?>
-                <?php foreach($odemeler AS $o)  { 
+                <?php $odemeler = db("planlar")
+                        ->join('user_companies','planlar.company_id','user_companies.company_id')
+                        ->join('users','user_companies.user_id','users.id')
+                        ->select(
+                            "users.name",
+                            "users.email",
+                            "planlar.id",
+                            "planlar.company_id",
+                            "planlar.date",
+                            "planlar.tutar",
+                            "planlar.json",
+                            "planlar.durum",
+                        )
 
-                    $u = @$user[$o->company_id];
-                  ?>
+                        ->where("planlar.durum","<>","Ödeme Bekliyor")
+                        ->where("planlar.json","not like","%test_mode%")
+                        ->orderBy("planlar.id","DESC")
+
+                        ->get(); 
+                        
+                ?>
+                <?php 
+                $tutar = 0;
+                foreach($odemeler AS $o)  { 
+                   
+                     $json = json_decode($o->json,true);
+                   ?>
+                        <tr>
+                            <td>{{@$o->name}} <br>
+                                <small> {{@$o->email}}</small>
+                                    ({{$o->company_id}})
+                            </td>
+                            <td>{{$o->date}}</td>
+                            <td>{{$o->tutar}}</td>
+                            <td><?php //dump($json) ?></td>
+                        </tr>  
+                 <?php $tutar += $o->tutar; } ?>
                  <tr>
-                     <td>{{@$u->name}} <br>
-                        <small> {{@$u->email}}</small>
-
-                     </td>
-                     <td>{{$o->date}}</td>
-                     <td>{{$o->tutar}}</td>
-                     <td>{{$o->json}}</td>
-                     <td>{{$o->durum}}</td>
-                 </tr> 
-                 <?php } ?>
+                    <th></th>
+                    <th></th>
+                    <th>{{price($tutar, "TRY")}}</th>
+                    <th></th>
+                 </tr>
             </table>
 
          </div>

@@ -1,2 +1,3 @@
 .vscode/sftp.json
 project/parabol/.env
+project/parabol/helpers.php
