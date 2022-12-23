@@ -86,15 +86,32 @@ $user = $dizi;
                     <th>Durum</th>
                 </tr>
                 <?php $odemeler = db("sms_paket")
-                ->where("durum","<>","Ödeme Bekliyor")
-                ->orderBy("id","DESC")
-                ->get(); ?>
+                    ->join('user_companies','sms_paket.company_id','user_companies.company_id')
+                    ->join('users','user_companies.user_id','users.id')
+                    ->select(
+                        "users.name",
+                        "users.email",
+                        "sms_paket.id",
+                        "sms_paket.company_id",
+                        "sms_paket.date",
+                        "sms_paket.sayi",
+                        "sms_paket.price",
+                        "sms_paket.json",
+                        "sms_paket.durum",
+                    )
+
+                    ->where("sms_paket.durum","<>","Ödeme Bekliyor")
+                    ->where("sms_paket.json","not like","%test_mode%")
+                    ->orderBy("sms_paket.id","DESC")
+                    ->get(); 
+                  //  dd($odemeler)
+                    ?>
                 <?php foreach($odemeler AS $o)  { 
-                    $u = $user[$o->company_id];
+                  
                   ?>
                  <tr>
-                     <td>{{$u->name}} <br>
-                        <small> {{$u->email}}</small>
+                     <td>{{$o->name}} <br>
+                        <small> {{$o->email}}</small>
 
                      </td>
                      <td>{{$o->date}}</td>
