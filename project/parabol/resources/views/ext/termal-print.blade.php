@@ -10,7 +10,9 @@ $fatura = db("documents")->where("id", get("id"))
 ->first();
 //dump($fatura);
 $currency = $fatura->currency_code;
-$faturaIcerik = db("document_items")->where("document_id", $fatura->id)->get();
+$faturaIcerik = db("document_items")->where("document_id", $fatura->id)
+->whereNull("deleted_at")
+->get();
 //dump($faturaIcerik);
  ?>
 @extends('layouts.print')

@@ -1,0 +1,124 @@
+[2022-12-24 12:00:06] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:192)
+[stacktrace]
+#0 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(118): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\\Log\\LogManager->driver()
+#3 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(252): Illuminate\\Log\\LogManager->error('Argument 2 pass...', Array)
+#4 /home/pgutrunc/app.parabol.truncgil.com/app/Exceptions/Handler.php(43): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(TypeError))
+#5 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(366): App\\Exceptions\\Handler->report(Object(TypeError))
+#6 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(131): Illuminate\\Foundation\\Console\\Kernel->reportException(Object(TypeError))
+#7 /home/pgutrunc/app.parabol.truncgil.com/artisan(22): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#8 {main}
+"} 
+[2022-12-24 12:00:06] laravel.ERROR: Argument 2 passed to Illuminate\Routing\UrlGenerator::__construct() must be an instance of Illuminate\Http\Request, null given, called in /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Routing/RoutingServiceProvider.php on line 65 {"exception":"[object] (TypeError(code: 0): Argument 2 passed to Illuminate\\Routing\\UrlGenerator::__construct() must be an instance of Illuminate\\Http\\Request, null given, called in /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Routing/RoutingServiceProvider.php on line 65 at /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:120)
+[stacktrace]
+#0 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Routing/RoutingServiceProvider.php(65): Illuminate\\Routing\\UrlGenerator->__construct(Object(Illuminate\\Routing\\RouteCollection), NULL, NULL)
+#1 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(869): Illuminate\\Routing\\RoutingServiceProvider->Illuminate\\Routing\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\\Container\\Container->build(Object(Closure))
+#3 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\\Container\\Container->resolve('url', Array, true)
+#4 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(692): Illuminate\\Foundation\\Application->resolve('url', Array)
+#5 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\\Container\\Container->make('url', Array)
+#6 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(119): Illuminate\\Foundation\\Application->make('url', Array)
+#7 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(876): app('Illuminate\\\\Cont...')
+#8 /home/pgutrunc/app.parabol.truncgil.com/config/filesystems.php(71): url('/')
+#9 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(72): require('/home/pgutrunc/...')
+#10 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#11 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(237): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#12 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#13 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#14 /home/pgutrunc/app.parabol.truncgil.com/artisan(22): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#15 {main}
+"} 
+[2022-12-24 12:15:02] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:192)
+[stacktrace]
+#0 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(118): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\\Log\\LogManager->driver()
+#3 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(252): Illuminate\\Log\\LogManager->error('Argument 2 pass...', Array)
+#4 /home/pgutrunc/app.parabol.truncgil.com/app/Exceptions/Handler.php(43): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(TypeError))
+#5 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(366): App\\Exceptions\\Handler->report(Object(TypeError))
+#6 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(131): Illuminate\\Foundation\\Console\\Kernel->reportException(Object(TypeError))
+#7 /home/pgutrunc/app.parabol.truncgil.com/artisan(22): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#8 {main}
+"} 
+[2022-12-24 12:15:02] laravel.ERROR: Argument 2 passed to Illuminate\Routing\UrlGenerator::__construct() must be an instance of Illuminate\Http\Request, null given, called in /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Routing/RoutingServiceProvider.php on line 65 {"exception":"[object] (TypeError(code: 0): Argument 2 passed to Illuminate\\Routing\\UrlGenerator::__construct() must be an instance of Illuminate\\Http\\Request, null given, called in /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Routing/RoutingServiceProvider.php on line 65 at /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:120)
+[stacktrace]
+#0 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Routing/RoutingServiceProvider.php(65): Illuminate\\Routing\\UrlGenerator->__construct(Object(Illuminate\\Routing\\RouteCollection), NULL, NULL)
+#1 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(869): Illuminate\\Routing\\RoutingServiceProvider->Illuminate\\Routing\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\\Container\\Container->build(Object(Closure))
+#3 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\\Container\\Container->resolve('url', Array, true)
+#4 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(692): Illuminate\\Foundation\\Application->resolve('url', Array)
+#5 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\\Container\\Container->make('url', Array)
+#6 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(119): Illuminate\\Foundation\\Application->make('url', Array)
+#7 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(876): app('Illuminate\\\\Cont...')
+#8 /home/pgutrunc/app.parabol.truncgil.com/config/filesystems.php(71): url('/')
+#9 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(72): require('/home/pgutrunc/...')
+#10 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#11 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(237): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#12 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#13 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#14 /home/pgutrunc/app.parabol.truncgil.com/artisan(22): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#15 {main}
+"} 
+[2022-12-24 12:30:04] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:192)
+[stacktrace]
+#0 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(118): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\\Log\\LogManager->driver()
+#3 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(252): Illuminate\\Log\\LogManager->error('Argument 2 pass...', Array)
+#4 /home/pgutrunc/app.parabol.truncgil.com/app/Exceptions/Handler.php(43): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(TypeError))
+#5 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(366): App\\Exceptions\\Handler->report(Object(TypeError))
+#6 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(131): Illuminate\\Foundation\\Console\\Kernel->reportException(Object(TypeError))
+#7 /home/pgutrunc/app.parabol.truncgil.com/artisan(22): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#8 {main}
+"} 
+[2022-12-24 12:30:05] laravel.ERROR: Argument 2 passed to Illuminate\Routing\UrlGenerator::__construct() must be an instance of Illuminate\Http\Request, null given, called in /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Routing/RoutingServiceProvider.php on line 65 {"exception":"[object] (TypeError(code: 0): Argument 2 passed to Illuminate\\Routing\\UrlGenerator::__construct() must be an instance of Illuminate\\Http\\Request, null given, called in /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Routing/RoutingServiceProvider.php on line 65 at /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:120)
+[stacktrace]
+#0 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Routing/RoutingServiceProvider.php(65): Illuminate\\Routing\\UrlGenerator->__construct(Object(Illuminate\\Routing\\RouteCollection), NULL, NULL)
+#1 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(869): Illuminate\\Routing\\RoutingServiceProvider->Illuminate\\Routing\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\\Container\\Container->build(Object(Closure))
+#3 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\\Container\\Container->resolve('url', Array, true)
+#4 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(692): Illuminate\\Foundation\\Application->resolve('url', Array)
+#5 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\\Container\\Container->make('url', Array)
+#6 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(119): Illuminate\\Foundation\\Application->make('url', Array)
+#7 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(876): app('Illuminate\\\\Cont...')
+#8 /home/pgutrunc/app.parabol.truncgil.com/config/filesystems.php(71): url('/')
+#9 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(72): require('/home/pgutrunc/...')
+#10 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#11 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(237): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#12 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#13 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#14 /home/pgutrunc/app.parabol.truncgil.com/artisan(22): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#15 {main}
+"} 
+[2022-12-24 12:45:02] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:192)
+[stacktrace]
+#0 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(118): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\\Log\\LogManager->get(NULL)
+#2 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(555): Illuminate\\Log\\LogManager->driver()
+#3 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(252): Illuminate\\Log\\LogManager->error('Argument 2 pass...', Array)
+#4 /home/pgutrunc/app.parabol.truncgil.com/app/Exceptions/Handler.php(43): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(TypeError))
+#5 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(366): App\\Exceptions\\Handler->report(Object(TypeError))
+#6 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(131): Illuminate\\Foundation\\Console\\Kernel->reportException(Object(TypeError))
+#7 /home/pgutrunc/app.parabol.truncgil.com/artisan(22): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#8 {main}
+"} 
+[2022-12-24 12:45:02] laravel.ERROR: Argument 2 passed to Illuminate\Routing\UrlGenerator::__construct() must be an instance of Illuminate\Http\Request, null given, called in /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Routing/RoutingServiceProvider.php on line 65 {"exception":"[object] (TypeError(code: 0): Argument 2 passed to Illuminate\\Routing\\UrlGenerator::__construct() must be an instance of Illuminate\\Http\\Request, null given, called in /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Routing/RoutingServiceProvider.php on line 65 at /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:120)
+[stacktrace]
+#0 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Routing/RoutingServiceProvider.php(65): Illuminate\\Routing\\UrlGenerator->__construct(Object(Illuminate\\Routing\\RouteCollection), NULL, NULL)
+#1 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(869): Illuminate\\Routing\\RoutingServiceProvider->Illuminate\\Routing\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\\Container\\Container->build(Object(Closure))
+#3 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\\Container\\Container->resolve('url', Array, true)
+#4 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(692): Illuminate\\Foundation\\Application->resolve('url', Array)
+#5 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\\Container\\Container->make('url', Array)
+#6 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(119): Illuminate\\Foundation\\Application->make('url', Array)
+#7 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(876): app('Illuminate\\\\Cont...')
+#8 /home/pgutrunc/app.parabol.truncgil.com/config/filesystems.php(71): url('/')
+#9 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(72): require('/home/pgutrunc/...')
+#10 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#11 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(237): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#12 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#13 /home/pgutrunc/app.parabol.truncgil.com/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#14 /home/pgutrunc/app.parabol.truncgil.com/artisan(22): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#15 {main}
+"} 
