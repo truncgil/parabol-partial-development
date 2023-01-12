@@ -2,3 +2,6 @@
 project/parabol/.env
 project/parabol/helpers.php
 project/parabol/resources/views/paytr.blade.php
+project/parabol/resources/views/ext/sms-paketi/satin-al.blade.php
+project/parabol/resources/views/ext/odeme-yapin.blade.php
+project/parabol/resources/views/ext/plan-satin-al.blade.php

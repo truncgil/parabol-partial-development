@@ -9,7 +9,7 @@
 
 
 <?php
-
+$u = u();
 $merchant_id='261280'; // Mağaza numarası
 $merchant_key='tZCpqizR86gZd59T'; // Mağaza Parolası - Mağaza paneline giriş yaparak BİLGİ sayfasından alabilirsiniz.
 $merchant_salt='GUC399Hp7iKQhK9s'; // Mağaza Gizli Anahtarı - Mağaza paneline giriş yaparak BİLGİ sayfasından alabilirsiniz.
@@ -34,7 +34,7 @@ if(!getisset("paytr")) {
     ],"sms_paket");
 }
 
-$email="umit.tunc@truncgil.com";//"{$_POST['email']}"; // Müşterinizin sitenizde kayıtlı eposta adresi
+$email=$u->email; // Müşterinizin sitenizde kayıtlı eposta adresi
 $payment_amount=$price*100;//9.99 TL
 
 $no_installment=0; // Taksit yapılmasını istemiyorsanız (Örn cep telefonu satışı) 1 yapın
