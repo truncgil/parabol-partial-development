@@ -1,6 +1,11 @@
     <!-- Core -->
-    <div class="preloader d-none">
+    <div class="preloader">
         <div class="lds-ring">
+            <img src="{{ asset('public/img/icon-dark.svg') }}" style="    position: absolute;
+    width: 45px;
+    border-radius: 100%;
+    top: 18px;
+    left: 18px;" alt="">
             <div></div>
             <div></div>
             <div></div>
@@ -15,9 +20,8 @@
             left: 0px;
             width: 100%;
             height: 100%;
-            background: #7a7a7a6b;
+            background: #265aa5eb;
             z-index: 1000000;
-            display: none !important;
         }
         .lds-ring {
             display: inline-block;
