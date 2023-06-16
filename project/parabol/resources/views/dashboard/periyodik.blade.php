@@ -1,4 +1,34 @@
+<?php $finans = finans_api();
+//dd($finans);
+?>
 <div class="col-12">
+    <div class="row">
+        <?php $currencies = [
+            'USD' => 'Dolar', 
+            'EUR' => 'Euro', 
+            'GBP' => 'Sterlin', 
+            'GRA' => 'Gram Altın'
+            ]; 
+            foreach($currencies AS $key => $name)  {
+
+                $selling = str_replace(".", ",", $finans[$key]['Selling']);
+                
+             
+             ?>
+         <div class="col-6 col-md-3">
+             <div class="card bg-gradient-primary card-stats" style="background: url(public/img/back.svg) !important;background-size: 500% !important">
+                
+                 <div class="card-body text-white">
+                     <small class="strong">{{$name}}</small> <br>
+                      <strong>{{price($selling, "₺", 0)}}</strong><br>
+                      <div class="badge badge-{{$finans[$key]['Change']<0 ? "danger" : "success"}}">{{$finans[$key]['Change']}}</div>
+                     </div>
+                 </div>
+         </div> 
+             <?php } ?>
+    </div>
+</div>
+<div class="col-12 d-none">
             <div class="card">
             <div class="card-header">
                     <div class="row align-items-center">
